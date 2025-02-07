@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepSeek Chat</title>
+    <link rel="stylesheet" href="styles.css?v=4"> <!-- Force fresh CSS load -->
+</head>
+<body>
+    <div class="app-container">
+        <!-- ✅ Left Sidebar (Folder View) -->
+        <aside class="sidebar">
+            <h2>📂 Chats</h2>
+            <button class="new-chat-btn">+ New Chat</button>
+            <ul id="chatList">
+                <li class="chat-item active">DeepSeek Chat</li>
+            </ul>
+        </aside>
+
+        <!-- ✅ Main Chat Area -->
+        <main class="main-content">
+            <header>
+                <h1>DeepSeek AI Chat</h1>
+            </header>
+
+            <section id="chatbox">
+                <div class="message bot">🤖 Hello! Ask me anything.</div>
+            </section>
+
+            <!-- ✅ Chat Input -->
+            <div class="chat-input-container">
+                <input type="text" id="userInput" placeholder="Type a message..." autofocus>
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

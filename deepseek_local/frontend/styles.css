@@ -1,0 +1,182 @@
+/* ✅ Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ✅ Layout */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white; /* White Background */
+    color: black;
+    height: 100vh;
+    display: flex;
+    overflow: hidden; /* Prevent horizontal scrolling */
+}
+
+/* ✅ App Container */
+.app-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* ✅ Sidebar (Folder View) */
+.sidebar {
+    width: 260px;
+    background: #f7f7f7; /* Light gray */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.new-chat-btn {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+#chatList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.chat-item {
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #e0e0e0;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.chat-item.active {
+    background: black;
+    color: white;
+}
+
+/* ✅ Main Chat Section */
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* ✅ Header */
+header {
+    text-align: center;
+    padding: 15px;
+    background: #f7f7f7;
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ Chatbox (Fix Full-Width & Vertical Scroll) */
+#chatbox {
+    flex-grow: 1;
+    overflow-y: auto; /* Allow only vertical scrolling */
+    padding: 20px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* ✅ Chat Message Styling (Fix Wrapping & Remove Scrollbars) */
+.message {
+    padding: 12px 16px;
+    margin: 10px;
+    border-radius: 12px;
+    max-width: 75%;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow: hidden; /* Prevent extra scrollbars */
+}
+
+/* ✅ AI (DeepSeek) Messages - Gray */
+.bot {
+    background: #e0e0e0;
+    color: black;
+    align-self: flex-start;
+    border-radius: 15px 15px 15px 0;
+}
+
+/* ✅ User Messages - Black */
+.user {
+    background: black;
+    color: white;
+    align-self: flex-end;
+    border-radius: 15px 15px 0 15px;
+}
+
+/* ✅ Fix <think> Message Styling */
+.think {
+    font-style: italic;
+    color: #555;
+    background: #ddd;
+    padding: 8px;
+    border-radius: 8px;
+    max-width: 75%;
+    overflow: hidden; /* Prevent scroll inside */
+    white-space: pre-wrap; /* Ensure wrapping */
+}
+
+/* ✅ Chat Input Area */
+.chat-input-container {
+    display: flex;
+    padding: 15px;
+    background: #f7f7f7;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ User Input Field */
+#userInput {
+    flex-grow: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: white;
+    color: black;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+/* ✅ Send Button */
+button {
+    background: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 12px 16px;
+    margin-left: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: gray;
+    color: white;
+    border: 1px solid black;
+}
