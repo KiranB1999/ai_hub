@@ -17,9 +17,9 @@ curl -fsSL https://ollama.com/install.sh | sh
 Download and install Ollama from the official website:  
 🔗 [Ollama Official Site](https://ollama.com/)
 
-Once installed, **pull the DeepSeek model**:
+Once installed, **opem cmd and run the following code**:
 ```bash
-ollama pull deepseek-chat
+ollama run deepseek-r1:8b
 ```
 
 ---
