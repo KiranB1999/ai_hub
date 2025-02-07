@@ -37,7 +37,7 @@ pip install streamlit ollama
 To start the chat application, run:
 
 ```bash
-streamlit run app.py
+streamlit run localdeepseek.py
 ```
 
 This will launch the **DeepSeek Chat** app in your browser.
